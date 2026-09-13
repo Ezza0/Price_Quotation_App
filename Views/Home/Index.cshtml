@@ -4,41 +4,106 @@
     ViewData["Title"] = "Price Quotation";
 }
 
-<div class="quote-card">
-    <h1>Price Quotation</h1>
+<div class="container-fluid px-0">
+    <div class="bg-success text-white rounded py-5 text-center">
+        <h1 class="h2 m-0 fw-bold">
+            <img src="~/images/coin.png"
+                 alt="Coin Icon"
+                 class="header-icon" />
+            <span>Price Quotation</span>
+        </h1>
+    </div>
 
-    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
 
-    <form asp-action="Index" method="post">
-        <div class="form-row">
-            <label asp-for="Subtotal">Sales Price</label>
-            <input asp-for="Subtotal" />
-            <span asp-validation-for="Subtotal" class="text-danger"></span>
+                <form asp-action="Index"
+                      method="post"
+                      class="mt-4">
+
+                    <div class="row mb-3 align-items-center">
+                        <label asp-for="Subtotal"
+                               class="col-sm-4 col-form-label">
+                            Sales Price
+                        </label>
+
+                        <div class="col-sm-4">
+                            <input asp-for="Subtotal"
+                                   class="form-control" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <span asp-validation-for="Subtotal"
+                                  class="text-danger small">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label asp-for="DiscountPercent"
+                               class="col-sm-4 col-form-label">
+                            Discount Percent
+                        </label>
+
+                        <div class="col-sm-4">
+                            <input asp-for="DiscountPercent"
+                                   class="form-control" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <span asp-validation-for="DiscountPercent"
+                                  class="text-danger small">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">
+                            Discount Amount
+                        </label>
+
+                        <div class="col-sm-4">
+                            <input value="@Model.DiscountAmount.ToString("C")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">
+                            Total
+                        </label>
+
+                        <div class="col-sm-4">
+                            <input value="@Model.Total.ToString("C")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-sm-4 col-sm-8">
+                            <button type="submit"
+                                    class="btn btn-success me-2">
+                                Calculate
+                            </button>
+
+                            <a asp-action="Index"
+                               class="btn btn-secondary">
+                                Clear
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
-
-        <div class="form-row">
-            <label asp-for="DiscountPercent">Discount Percent</label>
-            <input asp-for="DiscountPercent" />
-            <span asp-validation-for="DiscountPercent" class="text-danger"></span>
-        </div>
-
-        <div class="form-row">
-            <label>Discount Amount</label>
-            <input value="@Model.DiscountAmount.ToString("C")" readonly />
-        </div>
-
-        <div class="form-row">
-            <label>Total</label>
-            <input value="@Model.Total.ToString("C")" readonly />
-        </div>
-
-        <div class="form-actions">
-            <button type="submit">Calculate</button>
-            <a asp-action="Index">Clear</a>
-        </div>
-    </form>
+    </div>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

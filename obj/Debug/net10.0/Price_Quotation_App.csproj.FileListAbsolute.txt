@@ -18,9 +18,7 @@ C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\Price_Quotation_App.RazorAs
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\scopedcss\bundle\Price_Quotation_App.styles.css
-C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\scopedcss\projectbundle\Price_Quotation_App.bundle.scp.css
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\jf10gqyya4-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\43eicbwyxp-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\h22ghedu71-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -82,8 +80,6 @@ C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\vye0ottjsj-{0}-2
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\4yfkz4a6u0-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\i9ayhgf4v5-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\lkj9pbqon4-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\j1tp4gwarb-{0}-z3jd6t0iri-z3jd6t0iri.gz
-C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\i8pbnz761k-{0}-z3jd6t0iri-z3jd6t0iri.gz
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\staticwebassets.development.json
@@ -94,4 +90,5 @@ C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\refint\Price_Quotation_App.
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\Price_Quotation_App.pdb
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\Price_Quotation_App.genruntimeconfig.cache
 C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\ref\Price_Quotation_App.dll
-C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\ghkdbypnra-{0}-cb83qk7pck-cb83qk7pck.gz
+C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\Price_Quotation_App.sourcelink.json
+C:\Users\ezzam\Price_Quotation_App\obj\Debug\net10.0\compressed\ghkdbypnra-{0}-7z00wrcvls-7z00wrcvls.gz
