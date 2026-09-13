@@ -1,0 +1,44 @@
+﻿@model Price_Quotation_App.Models.PriceQuotationModel
+
+@{
+    ViewData["Title"] = "Price Quotation";
+}
+
+<div class="quote-card">
+    <h1>Price Quotation</h1>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-action="Index" method="post">
+        <div class="form-row">
+            <label asp-for="Subtotal">Sales Price</label>
+            <input asp-for="Subtotal" />
+            <span asp-validation-for="Subtotal" class="text-danger"></span>
+        </div>
+
+        <div class="form-row">
+            <label asp-for="DiscountPercent">Discount Percent</label>
+            <input asp-for="DiscountPercent" />
+            <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+        </div>
+
+        <div class="form-row">
+            <label>Discount Amount</label>
+            <input value="@Model.DiscountAmount.ToString("C")" readonly />
+        </div>
+
+        <div class="form-row">
+            <label>Total</label>
+            <input value="@Model.Total.ToString("C")" readonly />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Calculate</button>
+            <a asp-action="Index">Clear</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
