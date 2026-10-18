@@ -1,0 +1,66 @@
+@model Price_Quotation_App.Models.PriceQuote
+
+@{
+    ViewData["Title"] = "Quote Details";
+}
+
+<div class="container-fluid px-0">
+    <div class="bg-success text-white rounded py-5 text-center">
+        <h1 class="h2 m-0 fw-bold">
+            <img src="~/images/coin.png"
+                 alt="Coin Icon"
+                 class="header-icon" />
+            <span>Price Quotation</span>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="mt-4">
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">Sales Price</label>
+                        <div class="col-sm-4">
+                            <input value="@Model.Subtotal.ToString("F2")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">Discount Percent</label>
+                        <div class="col-sm-4">
+                            <input value="@Model.DiscountPercent.ToString("F2")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">Discount Amount</label>
+                        <div class="col-sm-4">
+                            <input value="@Model.DiscountAmount.ToString("C")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-sm-4 col-form-label">Total</label>
+                        <div class="col-sm-4">
+                            <input value="@Model.Total.ToString("C")"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-sm-4 col-sm-8">
+                            <a asp-action="Index" class="btn btn-secondary">Back to Quotes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

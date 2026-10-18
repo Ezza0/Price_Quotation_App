@@ -61,6 +61,20 @@ namespace Price_Quotation_App.Controllers
             return RedirectToAction(nameof(Index), new { slug = savedQuote.Slug });
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Details(string slug)
+        {
+            var quote = await _context.PriceQuotes
+                .FirstOrDefaultAsync(quote => quote.Slug == slug);
+
+            if (quote == null)
+            {
+                return NotFound();
+            }
+
+            return View(quote);
+        }
+
         private async Task<PriceQuotationPageViewModel> BuildPageAsync(
             PriceQuotationModel form)
         {
